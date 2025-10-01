@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Presentations — CS 410 Team Blue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav-bar">
+    <div class="logo">
+      <h1>Team Blue</h1>
+    </div>
+    <nav>
+      <ul class="items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="slide-container">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTZGOFgQEa8Hw0FEAwk961XT-fQ7IxscNZqciDbG5l0auc7XJwmOV-PFzpJRTgNqOcYZqKvpkgqnQ9D/pubembed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> CS 410 Team Blue</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

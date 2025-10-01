@@ -1,0 +1,39 @@
+* {
+ 
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    background-color: blue;
+
+    height: 72px;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+
+    position: fixed;
+    align-items: center;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    color: white;
+}
+
+.items {
+    margin-left: auto;     
+    display: flex;
+    gap: 20px;
+    list-style: none;    
+    margin-block: 0;     
+    padding: 0;         
+    color: #fff;
+}
+
+a {
+    color: white;
+    text-decoration: none;    
+    
+}

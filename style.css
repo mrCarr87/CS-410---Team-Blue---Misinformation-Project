@@ -55,45 +55,6 @@ main {
   flex: 1;
 }
 
-
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  justify-content: center; /* centers items and will center the last wrapped row */
-}
-
-.member {
-  text-align: center;
-  /* fixed basis so 4 members fit on a typical desktop row */
-  flex: 0 0 200px; /* do not grow/shrink, width ~200px */
-}
-
-.member img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 10px auto;
-}
-
-.member p {
-  font-size: 14px;
-  color: #444;
-  line-height: 1.5;
-  margin-top: 5px;
-}
-
-
-@media (max-width: 520px) {
-  .member {
-    flex: 0 0 45%;
-  }
-}
-
 .slide-container {
   display: flex;
   justify-content: center;  /* centers horizontally */

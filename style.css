@@ -202,3 +202,50 @@ footer {
     box-shadow: 3px 3px 0 #0f172a;
   }
 }
+
+@media (max-width: 640px) {
+  .site-title {
+    font-size: clamp(28px, 6vw + 8px, 40px);
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    box-shadow: 2px 2px 0 #0f172a, inset 0 1px 0 rgba(255,255,255,.7);
+  }
+
+  .items {
+    flex-direction: column;            
+    justify-content: center;
+    align-items: stretch;               
+    gap: 12px;
+    padding: 8px 12px 0 12px;
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 420px;                   
+    margin: 0 auto;
+    text-align: center;
+    padding: 14px 18px;                 
+    box-shadow: 3px 3px 0 #0f172a;
+  }
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.article p {
+  margin-bottom: 1.2em;
+}
+
+.article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}

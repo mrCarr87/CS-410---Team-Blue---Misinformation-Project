@@ -172,3 +172,24 @@ footer {
     box-shadow: 3px 3px 0 #0f172a;
   }
 }
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.article p {
+  margin-bottom: 1.2em;
+}
+
+.article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1em auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}

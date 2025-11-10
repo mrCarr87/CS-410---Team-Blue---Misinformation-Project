@@ -9,6 +9,7 @@
 <body>
   <header class="topbar">
     <h1 class="site-title">Misinformation Detector</h1>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">More</button>
     <nav class="nav">
       <ul class="items">
         <li><a class="nav-btn" href="index.html">Home</a></li>
@@ -32,5 +33,18 @@
   <footer>
     <p>©2025 CS 410 Team Blue • <a href="https://www.odu.edu/">ODU</a> • <a href="https://www.odu.edu/computer-science">ODU CS</a></p>
   </footer>
+    <script>
+  (function () {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.textContent = open ? 'Less' : 'More';
+      });
+    }
+  })();
+</script>
 </body>
 </html>

@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problem</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Problem</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="topbar">
-    <h1 class="site-title">Misinformation Detector</h1>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">More</button>
-    <nav class="nav">
-      <ul class="items">
-        <li><a class="nav-btn" href="index.html">Home</a></li>
-        <li><a class="nav-btn" href="problem.html">Problem</a></li>
-        <li><a class="nav-btn" href="solution.html">Solution</a></li>
-        <li><a class="nav-btn" href="presentation.html">Presentation</a></li>
-        <li><a class="nav-btn" href="labs.html">Labs</a></li>
-        <li><a class="nav-btn" href="team.html">Team</a></li>
-        <li><a class="nav-btn" href="deliverables.html">Deliverables</a></li>
-        <li><a class="nav-btn" href="references.html">References</a></li>
-        <li><a class="nav-btn" href="glossary.html">Glossary</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1 class="site-title">Misinformation Detector</h1>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" type="button">Menu</button>
+    </div>
   </header>
-   <main>
+
+  <div class="nav-overlay" hidden></div>
+
+  <nav class="nav-drawer" id="primary-nav" aria-label="Primary navigation">
+    <div class="nav-drawer-header">
+      <div class="nav-drawer-title">Menu</div>
+      <button class="drawer-close" type="button" aria-label="Close menu">×</button>
+    </div>
+    <ul class="items">
+      <li><a class="nav-btn" href="index.html">Home</a></li>
+      <li><a class="nav-btn" href="problem.html">Problem</a></li>
+      <li><a class="nav-btn" href="solution.html">Solution</a></li>
+      <li><a class="nav-btn" href="presentation.html">Presentation</a></li>
+      <li><a class="nav-btn" href="labs.html">Labs</a></li>
+      <li><a class="nav-btn" href="team.html">Team</a></li>
+      <li><a class="nav-btn" href="deliverables.html">Deliverables</a></li>
+      <li><a class="nav-btn" href="references.html">References</a></li>
+      <li><a class="nav-btn" href="glossary.html">Glossary</a></li>
+    </ul>
+  </nav>
+
+  <main>
     <article class="article">
       <h2>Problem</h2>
       <p>
@@ -41,32 +51,52 @@
         <li>Misinformation spreads up to ten times faster than credible reporting on social media (PIRG, 2025).</li>
       </ul>
 
-    <section class="process-flow">
       <h3>Current Process Flow</h3>
       <figure>
-        <img
-          src="./team_images/current-process-flow.png"
-          style="max-width:100%; height:auto;"
-        />
+        <img src="./team_images/current-process-flow.png" alt="Current process flow for assessing credibility." />
         <figcaption>Current process flow for assessing credibility.</figcaption>
       </figure>
     </article>
   </main>
+
   <footer>
     <p>©2025 CS 410 Team Blue • <a href="https://www.odu.edu/">ODU</a> • <a href="https://www.odu.edu/computer-science">ODU CS</a></p>
   </footer>
-    <script>
-  (function () {
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    if (toggle && nav) {
-      toggle.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        toggle.textContent = open ? 'Less' : 'More';
-      });
-    }
-  })();
-</script>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const drawer = document.querySelector('.nav-drawer');
+      const overlay = document.querySelector('.nav-overlay');
+      const closeBtn = document.querySelector('.drawer-close');
+
+      function openMenu() {
+        drawer.classList.add('open');
+        overlay.hidden = false;
+        document.body.classList.add('menu-open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeMenu() {
+        drawer.classList.remove('open');
+        overlay.hidden = true;
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      if (toggle && drawer && overlay) {
+        toggle.addEventListener('click', () => {
+          drawer.classList.contains('open') ? closeMenu() : openMenu();
+        });
+
+        overlay.addEventListener('click', closeMenu);
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && drawer.classList.contains('open')) closeMenu();
+        });
+      }
+    })();
+  </script>
 </body>
 </html>

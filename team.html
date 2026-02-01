@@ -1,106 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="styleSheet" href="style.css"/>
-        <title>Team Blue Members</title>
-    </head>
-    
-    <body>
-        <header class="topbar">
-            <h1 class="site-title">Misinformation Detector</h1>
-            <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">More</button>
-            <nav class="nav">
-            <ul class="items">
-                <li><a class="nav-btn" href="index.html">Home</a></li>
-                <li><a class="nav-btn" href="problem.html">Problem</a></li>
-                <li><a class="nav-btn" href="solution.html">Solution</a></li>
-                <li><a class="nav-btn" href="presentation.html">Presentation</a></li>
-                <li><a class="nav-btn" href="labs.html">Labs</a></li>
-                <li><a class="nav-btn" href="team.html">Team</a></li>
-                <li><a class="nav-btn" href="deliverables.html">Deliverables</a></li>
-                <li><a class="nav-btn" href="references.html">References</a></li>
-                <li><a class="nav-btn" href="glossary.html">Glossary</a></li>
-            </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1 class="site-title">Misinformation Detector</h1>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" type="button">Menu</button>
+    </div>
+  </header>
 
-        <main>
-            <section class="team-grid">
-                <div class="member">
-                    <img src="./team_images/Christopher Artis.png" alt="Christopher Artis">
-                    <h3>Christopher Artis</h3>
-                    <p>Christopher Artis is a Computer Science major currently in his senior year.
-                        His aspirations are to finish school and find work in software engineering or cybersecurity.
-                        His interests include reading, software development, and running.</p>
-                </div>
+  <div class="nav-overlay" hidden></div>
 
-                <div class="member">
-                    <img src="./team_images/ Carter Gray.jpg" alt="Carter Gray">
-                    <h3>Carter Gray</h3>
-                    <p>Carter Gray is a senior at Old Dominion University who is pursuing a bachelor's degree in computer science.
-                        Her interests include reading, front-end development, self-hosting things on Raspberry Pis, meteorology and video games.</p>
-                </div>
+  <nav class="nav-drawer" id="primary-nav" aria-label="Primary navigation">
+    <div class="nav-drawer-header">
+      <div class="nav-drawer-title">Menu</div>
+      <button class="drawer-close" type="button" aria-label="Close menu">×</button>
+    </div>
+    <ul class="items">
+      <li><a class="nav-btn" href="index.html">Home</a></li>
+      <li><a class="nav-btn" href="problem.html">Problem</a></li>
+      <li><a class="nav-btn" href="solution.html">Solution</a></li>
+      <li><a class="nav-btn" href="presentation.html">Presentation</a></li>
+      <li><a class="nav-btn" href="labs.html">Labs</a></li>
+      <li><a class="nav-btn" href="team.html">Team</a></li>
+      <li><a class="nav-btn" href="deliverables.html">Deliverables</a></li>
+      <li><a class="nav-btn" href="references.html">References</a></li>
+      <li><a class="nav-btn" href="glossary.html">Glossary</a></li>
+    </ul>
+  </nav>
 
-                <div class="member">
-                    <img src="./team_images/Ryan Asberry.png" alt="Ryan Asberry">
-                    <h3>Ryan Asberry</h3>
-                    <p>Ryan Asberry is a Computer Science Major currently in his senior year.
-                        With his affinity for computers, he wants to study how they operate to advance his career in IT and the paths it can offer down the line.
-                        In his off time he enjoys building computers, 3D printing, and building models</p>
-                </div>
+  <main>
+    <section class="team-grid">
+      <div class="member">
+        <img src="./team_images/Christopher Artis.png" alt="Christopher Artis">
+        <h3>Christopher Artis</h3>
+        <p>Christopher Artis is a Computer Science major currently in his senior year.
+          His aspirations are to finish school and find work in software engineering or cybersecurity.
+          His interests include reading, software development, and running.</p>
+      </div>
 
-                <div class="member">
-                    <img src="./team_images/Marc Ryan Carretero.jpg" alt="Marc Ryan Carretero">
-                    <h3>Marc Ryan Carretero</h3>
-                    <p>Marc Ryan Carretero is a Computer Science major and currently in his Senior year.
-                        When he graduates college, he would like to do software engineering, website development, and potentially video game design.
-                        In his free time, he likes playing video games, drawing character and creature designs, writing characters and worlds, and practicing voice acting.</p>
-                </div>
+      <div class="member">
+        <img src="./team_images/ Carter Gray.jpg" alt="Carter Gray">
+        <h3>Carter Gray</h3>
+        <p>Carter Gray is a senior at Old Dominion University who is pursuing a bachelor's degree in computer science.
+          Her interests include reading, front-end development, self-hosting things on Raspberry Pis, meteorology and video games.</p>
+      </div>
 
-                <div class="member">
-                    <img src="./team_images/Larry Teasley.jpg" alt="Larry Teasley">
-                    <h3>Larry Teasley</h3>
-                    <p>Larry Teasley is a senior at Old Dominion University, studying Computer Science with a minor in Cybersecurity.
-                        After graduating, he plans to pursue a PhD in computer science, with a concentration in bioinformatics and cybersecurity.
-                        In his free time, he enjoys traveling, attending car shows, and motorsport events.</p>
-                </div>
+      <div class="member">
+        <img src="./team_images/Ryan Asberry.png" alt="Ryan Asberry">
+        <h3>Ryan Asberry</h3>
+        <p>Ryan Asberry is a Computer Science Major currently in his senior year.
+          With his affinity for computers, he wants to study how they operate to advance his career in IT and the paths it can offer down the line.
+          In his off time he enjoys building computers, 3D printing, and building models</p>
+      </div>
 
-                <div class="member">
-                    <img src="./team_images/Ricardo Neri.jpg" alt="Ricardo Neri">
-                    <h3>Ricardo Neri</h3>
-                    <p>Ricardo Neri is a senior at Old Dominion University, pursuing a Bachelor’s in Computer Science.
-                        After graduating, he plans to build a career as a reverse engineer or software developer.
-                        In his free time, he enjoys golf, motorcycle track days, and video games.</p>
-                </div>
+      <div class="member">
+        <img src="./team_images/Marc Ryan Carretero.jpg" alt="Marc Ryan Carretero">
+        <h3>Marc Ryan Carretero</h3>
+        <p>Marc Ryan Carretero is a Computer Science major and currently in his Senior year.
+          When he graduates college, he would like to do software engineering, website development, and potentially video game design.
+          In his free time, he likes playing video games, drawing character and creature designs, writing characters and worlds, and practicing voice acting.</p>
+      </div>
 
-                <div class="member">
-                    <img src="./team_images/Shawn Watkins.png" alt="Shawn Watkins">
-                    <h3>Shawn Watkins</h3>
-                    <p>Shawn Watkins is a senior at Old Dominion University.
-                        He is currently studying Computer Science, and plans on pursuing a Master's Degree in the same field.
-                        In his free time he enjoys to surf, work on cars, and spend time sewing and designing his own clothes.</p>
-                </div>
-            </section>
-        </main>
+      <div class="member">
+        <img src="./team_images/Larry Teasley.jpg" alt="Larry Teasley">
+        <h3>Larry Teasley</h3>
+        <p>Larry Teasley is a senior at Old Dominion University, studying Computer Science with a minor in Cybersecurity.
+          After graduating, he plans to pursue a PhD in computer science, with a concentration in bioinformatics and cybersecurity.
+          In his free time, he enjoys traveling, attending car shows, and motorsport events.</p>
+      </div>
 
-        <footer>
-            <p>©2025 CS 410 Team Blue • <a href="https://www.odu.edu/">ODU</a> • <a href="https://www.odu.edu/computer-science">ODU CS</a></p>
-        </footer>
-        <script>
-            (function () {
-                const toggle = document.querySelector('.menu-toggle');
-                const nav = document.querySelector('.nav');
-                if (toggle && nav) {
-                toggle.addEventListener('click', () => {
-                    const open = nav.classList.toggle('open');
-                    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-                    toggle.textContent = open ? 'Less' : 'More';
-                });
-                }
-            })();
-        </script>
-    </body>
+      <div class="member">
+        <img src="./team_images/Ricardo Neri.jpg" alt="Ricardo Neri">
+        <h3>Ricardo Neri</h3>
+        <p>Ricardo Neri is a senior at Old Dominion University, pursuing a Bachelor’s in Computer Science.
+          After graduating, he plans to build a career as a reverse engineer or software developer.
+          In his free time, he enjoys golf, motorcycle track days, and video games.</p>
+      </div>
 
+      <div class="member">
+        <img src="./team_images/Shawn Watkins.png" alt="Shawn Watkins">
+        <h3>Shawn Watkins</h3>
+        <p>Shawn Watkins is a senior at Old Dominion University.
+          He is currently studying Computer Science, and plans on pursuing a Master's Degree in the same field.
+          In his free time he enjoys to surf, work on cars, and spend time sewing and designing his own clothes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 CS 410 Team Blue • <a href="https://www.odu.edu/">ODU</a> • <a href="https://www.odu.edu/computer-science">ODU CS</a></p>
+  </footer>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const drawer = document.querySelector('.nav-drawer');
+      const overlay = document.querySelector('.nav-overlay');
+      const closeBtn = document.querySelector('.drawer-close');
+
+      function openMenu() {
+        drawer.classList.add('open');
+        overlay.hidden = false;
+        document.body.classList.add('menu-open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeMenu() {
+        drawer.classList.remove('open');
+        overlay.hidden = true;
+        document.body.classList.remove('menu-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      if (toggle && drawer && overlay) {
+        toggle.addEventListener('click', () => {
+          drawer.classList.contains('open') ? closeMenu() : openMenu();
+        });
+
+        overlay.addEventListener('click', closeMenu);
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && drawer.classList.contains('open')) closeMenu();
+        });
+      }
+    })();
+  </script>
+</body>
 </html>

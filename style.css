@@ -249,6 +249,12 @@ body.menu-open .nav-overlay {
   color: #475569;
 }
 
+.title-link {
+  text-decoration: none !important;
+  color: black;
+}
+
+
 
 /* Footer */
 footer {
